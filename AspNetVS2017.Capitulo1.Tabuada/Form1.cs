@@ -19,10 +19,12 @@ namespace AspNetVS2017.Capitulo1.Tabuada
 
         private void tabuadaTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar >= '0' && e.KeyChar <= '9'|| e.KeyChar == '\b' || e.KeyChar =='\r')
-           
+            if (e.KeyChar >= '0' && e.KeyChar <= '9' || e.KeyChar == '\b' || e.KeyChar == '\r')
+            {
+        
 
-              #if (e.keyChar ==13)
+              if (e.KeyChar ==13)
+
                 {
                  Calcular();
                 }
@@ -52,3 +54,4 @@ namespace AspNetVS2017.Capitulo1.Tabuada
         }
     }
 
+}
